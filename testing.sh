@@ -36,7 +36,7 @@ for n in 5000 10000 20000 25000 40000 50000 75000 85000 100000 150000 200000; do
     done
 
     echo "-----------------------------------------------------------"
-    echo -n "n=$n Cython Serial"
+    echo -n "n=$n Cython Serial: "
     python Cython-0.28.1/Cy_ser_test.py $n
 
     for p in 1 2 4 8 16; do
@@ -46,7 +46,7 @@ for n in 5000 10000 20000 25000 40000 50000 75000 85000 100000 150000 200000; do
     
     
     echo "-----------------------------------------------------------"
-    echo -n "n=$n Python Serial:"
+    echo -n "n=$n Python Serial: "
     python3 PyBenchmark_Ser.py $n
 
     for t in 1 2 4 8 16; do
