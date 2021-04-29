@@ -22,7 +22,7 @@ for n in 5000 10000 20000 25000 40000 50000 75000 85000 100000 150000 200000; do
     python3 PyBenchmark_Ser.py $n
 
     for p in 1 2 4 8 16; do
-        echo -n "n=$n p=$t Python W/ Processes: "
+        echo -n "n=$n p=$p Python W/ Processes: "
         python3 PyBenchmark.py $p $n
     done
 
